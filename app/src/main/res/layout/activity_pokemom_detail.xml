@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PokemomDetailActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/glVertical"
+        app:layout_constraintGuide_begin="24dp"
+        android:orientation="vertical"/>
+
+
+    <TextView
+        android:id="@+id/tvPokemomNameDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Pikachu"
+        android:textColor="@color/pokemomName"
+        android:textSize="32sp"
+        app:layout_constraintStart_toEndOf="@id/glVertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPokemomNumberDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#025"
+        android:textColor="@color/pokemomName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPokemomNameDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvPokemomNameDetails"
+        android:layout_marginEnd="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPokemomType1"
+        app:layout_constraintStart_toEndOf="@id/glVertical"
+        android:text="Eletric"
+        android:background="@drawable/bg_rounded"
+        app:layout_constraintTop_toBottomOf="@id/tvPokemomNameDetails"
+        android:layout_marginTop="6dp"
+        android:textSize="14sp"
+        android:textColor="@color/pokemomName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPokemomType2"
+        app:layout_constraintStart_toEndOf="@id/tvPokemomType1"
+        android:text="Eletric"
+        android:background="@drawable/bg_rounded"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvPokemomNameDetails"
+        android:layout_marginTop="6dp"
+        android:textSize="14sp"
+        android:textColor="@color/pokemomName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height"
+        android:textSize="12sp"
+        android:textColor="@color/height"
+        app:layout_constraintTop_toBottomOf="@id/tvPokemomType1"
+        android:id="@+id/tvPokemomHeightTitle"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toEndOf="@id/glVertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.40 cm"
+        android:textSize="22sp"
+        android:textColor="@color/pokemomName"
+        app:layout_constraintTop_toBottomOf="@id/tvPokemomHeightTitle"
+        android:id="@+id/tvPokemomHeight"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toEndOf="@id/glVertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textSize="12sp"
+        android:textColor="@color/height"
+        app:layout_constraintTop_toBottomOf="@id/tvPokemomHeight"
+        android:id="@+id/tvPokemomWeightTitle"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/glVertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6.0 kg"
+        android:textSize="22sp"
+        android:textColor="@color/pokemomName"
+        app:layout_constraintTop_toBottomOf="@id/tvPokemomWeightTitle"
+        android:id="@+id/tvPokemomWeight"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toEndOf="@id/glVertical"/>
+
+    <ImageView
+        android:id="@+id/ivPokemomImageDetail"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@id/tvPokemomNumberDetails"
+        app:layout_constraintTop_toBottomOf="@id/tvPokemomNumberDetails"
+        tools:srcCompat="@tools:sample/avatars" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvLocationTitle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:text="Localização"-->
+<!--        android:textColor="@color/pokemomName"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintStart_toEndOf="@id/glVertical"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/ivPokemomImageDetail" />-->
+
+<!--    <fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:tools="http://schemas.android.com/tools"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/mapFragment"-->
+<!--        tools:context=".MapsActivity"-->
+<!--        android:visibility="gone"-->
+<!--        android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tvLocationTitle"-->
+<!--        app:layout_constraintStart_toStartOf="@id/glVertical"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginEnd="24dp"-->
+<!--        android:layout_marginTop="7dp"-->
+<!--        android:layout_marginBottom="19dp"/>-->
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
