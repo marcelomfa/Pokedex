@@ -12,14 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pokedex">
 
+        <activity android:name=".ui.AddPokemonActivity">
+            android:label="@string/add_pokemom_title"
+            android:parentActivityName=".MainActivity" />
+        </activity>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="googleApiKey" />
-        <activity android:name=".PokemomDetailActivity"
-            android:parentActivityName=".MainActivity"
+            android:value="${mapsApiKey}" />
+
+        <activity
+            android:name=".ui.PokemonDetailActivity"
             android:label="@string/pokemom_detail_title"
-            ></activity>
-        <activity android:name=".MainActivity"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity
+            android:name=".ui.MainActivity"
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PokemomDetailActivity">
+    tools:context=".ui.PokemonDetailActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:layout_width="wrap_content"
@@ -108,40 +108,40 @@
 
     <ImageView
         android:id="@+id/ivPokemomImageDetail"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="@id/tvPokemomNumberDetails"
         app:layout_constraintTop_toBottomOf="@id/tvPokemomNumberDetails"
         tools:srcCompat="@tools:sample/avatars" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/tvLocationTitle"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="24dp"-->
-<!--        android:visibility="gone"-->
-<!--        android:text="Localização"-->
-<!--        android:textColor="@color/pokemomName"-->
-<!--        android:textSize="18sp"-->
-<!--        app:layout_constraintStart_toEndOf="@id/glVertical"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/ivPokemomImageDetail" />-->
+    <TextView
+        android:id="@+id/tvLocationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Localização"
+        android:textColor="@color/pokemomName"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/glVertical"
+        app:layout_constraintTop_toBottomOf="@id/ivPokemomImageDetail" />
 
-<!--    <fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--        xmlns:tools="http://schemas.android.com/tools"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:id="@+id/mapFragment"-->
-<!--        tools:context=".MapsActivity"-->
-<!--        android:visibility="gone"-->
-<!--        android:name="com.google.android.gms.maps.SupportMapFragment"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/tvLocationTitle"-->
-<!--        app:layout_constraintStart_toStartOf="@id/glVertical"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        android:layout_marginEnd="24dp"-->
-<!--        android:layout_marginTop="7dp"-->
-<!--        android:layout_marginBottom="19dp"/>-->
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/mapFragment"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLocationTitle"
+        app:layout_constraintStart_toStartOf="@id/glVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 
 

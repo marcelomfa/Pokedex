@@ -6,8 +6,10 @@
     <color name="primaryTextColor">#ffffff</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="floatingButtonColor">#2E2E2E</color>
+    <color name="fabAddPokemom">#2E2E2E</color>
+    <color name="btAddPokemom">#2E2E2E</color>
     <color name="pokemomName">#2E2E2E</color>
     <color name="pokemomTag">#BCBCBC</color>
     <color name="height">#A0A0A0</color>
+    <color name="tilBackground">#EFEFEF</color>
 </resources>
